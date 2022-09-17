@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+{% extends "basic_app/base.html" %}
+{% load my_filters %}
+{% block body_block %}
+
+    <h1>Welcome to index.</h1>
+    <h2>This is also part of Template inheritance.</h2>
+    <br>
+    <h1>{{ text | cuts:'basic' }}</h1>
+
+{% endblock %}
